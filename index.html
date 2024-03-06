@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    :root {
+      --White: hsl(0, 0%, 100%);
+      --Light-gray: hsl(212, 45%, 89%);
+      --Grayish-blue: hsl(220, 15%, 55%);
+      --Dark-blue: hsl(218, 44%, 22%);
+    }
+    body {
+      margin: 0;
+      font-family: "Outfit", sans-serif;
+      background-color: var(--Light-gray);
+    }
+    .main-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 48px 0;
+    }
+    .container {
+      width: 375px;
+      background-color: var(--White);
+      padding: 14px;
+      box-sizing: border-box;
+      border-radius: 20px;  
+    }
+    .container div img {
+      width: 100%;
+      border-radius: 20px;
+    }
+    .container h2 {
+      text-align: center;
+      color: var(--Dark-blue);
+      padding: 12px 18px 0 18px;
+    }
+    .container p {
+      color: var(--Grayish-blue);
+      text-align: center;
+      padding: 0 32px 18px 32px;
+    }
+    @media (max-width: 375px) {
+      .main-container {
+      width: 100%;
+      padding: 48px 24px;
+      box-sizing: border-box;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+
+    <div class="container">
+      <div>
+        <img src="/images/image-qr-code.png" alt="QR-img">
+      </div>
+
+      <h2>
+        Improve your front-end skills by building projects
+      </h2>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+
+    </div>
+
+  </div>
+</body> 
+</html>
